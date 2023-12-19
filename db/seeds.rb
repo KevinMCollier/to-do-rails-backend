@@ -5,7 +5,7 @@ Todo.delete_all
 User.delete_all
 
 # Seed user
-kevin = User.create!(name: 'Kevin', email: 'kevin@example.com', password: 'password', productivity_level: 'Motivated')
+kevin = User.create!(email: 'kevin@example.com', password: 'password')
 
 # Seed todos
 seed_todos = [
