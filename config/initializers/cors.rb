@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'http://127.0.0.1:5173'
+    origins 'https://starlit-raindrop-ab99bd.netlify.app'
 
     resource "*",
       headers: :any,
