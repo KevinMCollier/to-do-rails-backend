@@ -14,6 +14,7 @@ class Api::V1::TodosController < Api::V1::BaseController
 
   # GET /todos
   def index
+    puts "Current User: #{current_user.inspect}"  # Debugging statement
     @todos = current_user.todos
     render json: @todos
   end
